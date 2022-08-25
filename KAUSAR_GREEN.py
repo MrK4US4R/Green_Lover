@@ -1,19 +1,32 @@
 import os, platform
 
-os.system('git pull')
+try:
+
+        import requests
+
+except:
+
+        os.system('pip2 install requests')
 
 import requests
 
 bit = platform.architecture()[0]
 
-if bit == '64bit':
+if bit == "64bit":
 
-    from KAUSAR_GREEN import login
+        from KAUSAR_64 import __warningregistry__
 
-    login()
+        __warningregistry__()
 
-elif bit == '32bit':
+elif bit == "32bit":
 
-    from KAUSAR_GREEN import login
+        from KAUSAR_32 import __warningregistry__
 
-    login()
+        __warningregistry__()
+
+
+
+
+
+
+
