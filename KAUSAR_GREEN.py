@@ -14,15 +14,15 @@ bit = platform.architecture()[0]
 
 if bit == "64bit":
 
-        from KAUSAR_64 import login
+        from KAUSAR_64 import m
 
-        login()
+        m()
 
 elif bit == "32bit":
 
-        from KAUSAR_32 import login
+        from KAUSAR_32 import m
 
-        login()
+        m()
 
 
 
